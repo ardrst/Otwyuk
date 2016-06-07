@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Around The World</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<!--// css -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- font -->
+<link href='//fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+<!-- //font -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>	
+<!--animate-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+	<script>
+		 new WOW().init();
+	</script>
+<!--//end-animate-->
+</head>
+<body>
+	<!-- header -->
+	<div class="header">
+		<div class="top-header">
+			<div class="container">
+				<div class="top-header-info">
+					<div class="top-header-left wow fadeInLeft animated" data-wow-delay=".5s">
+						<p>More than 10 new destinations for your trip</p>
+					</div>
+					<div class="top-header-right wow fadeInRight animated" data-wow-delay=".5s">
+						<div class="top-header-right-info">
+							<ul>
+								<li><a href="#">Login</a></li>
+								<li><a href="#">Sign up</a></li>
+							</ul>
+						</div>
+						<div class="social-icons">
+							<ul>
+								<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a class="twitter facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a class="twitter google" href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-header">
+			<div class="container">
+				<div class="logo wow fadeInDown animated" data-wow-delay=".5s">
+					<h1><a href="index.html"><img src="images/logo.jpg" alt="" /></a></h1>
+				</div>
+				<div class="top-nav wow fadeInRight animated" data-wow-delay=".5s">
+					<nav class="navbar navbar-default">
+						<div class="container">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Menu						
+							</button>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li><a href="#">Home</a></li>
+								<li><a href="#" class="active">About</a></li>
+								<li><a href="#">Codes</a></li>
+								<li><a href="#" class="dropdown-toggle hvr-bounce-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery<span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a class="hvr-bounce-to-bottom" href="#">Gallery1</a></li>
+										<li><a class="hvr-bounce-to-bottom" href="#">Gallery2</a></li>          
+									</ul>
+								</li>	
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>	
+							<div class="clearfix"> </div>
+						</div>	
+					</nav>		
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+	<!-- banner -->
+	<div class="banner">
+			<div class="slider">
+				<h2 class="wow shake animated" data-wow-delay=".5s">Trip</h2>
+				<div class="border"></div>
+				<script src="js/responsiveslides.min.js"></script>
+				<script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+						// Slideshow 4
+							$("#slider3").responsiveSlides({
+								auto: true,
+								pager: true,
+								nav: true,
+								speed: 500,
+								namespace: "callbacks",
+								before: function () {
+									$('.events').append("<li>before event fired.</li>");
+								},
+								after: function () {
+									$('.events').append("<li>after event fired.</li>");
+								}
+							 });				
+						});
+				</script>
+				<div  id="top" class="callbacks_container-wrap">
+					<ul class="rslides" id="slider3">
+						<li>
+							<div class="slider-info">
+								<h3 class="wow fadeInRight animated" data-wow-delay=".5s">Pantainya Bagus</h3>
+								<p class="wow fadeInLeft animated" data-wow-delay=".5s">Kalo gak bagus gausah balik lagi</p>
+								<div class="more-button wow fadeInRight animated" data-wow-delay=".5s">
+									<a href="#">Click Here	</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="slider-info">
+								<h3>Hotelnya bertingkat</h3>
+								<p>Kalo gak bertingkat, tolong tingkatin</p>
+								<div class="more-button">
+									<a href="#">Read More	</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="slider-info">
+								<h3> Makanan'nya enak </h3>
+								<p> Kalo gak enak gausah dimakan	</p>
+								<div class="more-button">
+									<a href="#">Click Here	</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+	</div>
+	<!-- //banner -->
+	<!-- banner-bottom -->
+	<div class="banner-bottom">
+		<div class="container">
+			<div class="banner-bottom-grids">
+				<div class="col-md-6 banner-bottom-left wow fadeInLeft animated" data-wow-delay=".5s">
+					<div class="left-border">
+						<div class="left-border-info">
+							<p>Kelapa muda tinggal petik dari pohonnya</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 banner-bottom-left banner-bottom-right wow fadeInRight animated" data-wow-delay=".5s">
+					<div class="left-border">
+						<div class="left-border-info right-border-info">
+							<p>Kelapa hijau tinggal minta sama yang punya</p>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //banner-bottom -->
+
+	<!-- informasi about us -->
+	<!-- information -->
+	<div class="information">
+		<div class="container">
+			<div class="information-heading">
+				<h3 class="wow fadeInDown animated" data-wow-delay=".5s">Kenapa sama kita</h3>
+				<p class="wow fadeInUp animated" data-wow-delay=".5s">Di kami tidak menyediakan formalin, boraks ataupun pemanis buatan. Hanya saja kami menggunakan bahan-bahan kimia agar tanaman yang kami tanam awet muda dan selalu manis</p>
+			</div>
+			
+			<div class="information-grids">
+				<div class="col-md-4 information-grid wow fadeInLeft animated" data-wow-delay=".5s">
+					<div class="information-info">
+						<div class="information-grid-img">
+							<img src="images/8.jpg" alt="" />
+						</div>
+						<div class="information-grid-info">
+							<h4>Pantai</h4>
+							<p>Terdapat banyak pantai. banyak pilihan. banyak sensai. banyak-banyakin istigfar lah kalian.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 information-grid wow fadeInUp animated" data-wow-delay=".5s">
+					<div class="information-info">
+						<div class="information-grid-info">
+							<h4>Matahari</h4>
+							<p>kalian dapat melihat matahari tebit pada pagi hari dan terbenam pada sore hari</p>
+						</div>
+						<div class="information-grid-img">
+							<img src="images/3.jpg" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 information-grid wow fadeInRight animated" data-wow-delay=".5s">
+					<div class="information-info">
+						<div class="information-grid-img">
+							<img src="images/7.jpg" alt="" />
+						</div>
+						<div class="information-grid-info">
+							<h4>Penginapan</h4>
+							<p>Kami menyediakan penginapan berupa kontrakan bukan kontraktor. berlantai tapi tidak bertingkat.</p>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<br><br>
+		<div class="container">
+			<div class="information-heading">
+				<h3 class="wow fadeInDown animated" data-wow-delay=".5s">About Us</h3>
+				<p class="wow fadeInUp animated" data-wow-delay=".5s">	Hai, kawan selamat datang di web site kita. Disini adalah tim yang terbentuk ditraining coding mums. Dan disini kita membahas menengenai tempat wisata dibeberapa daerah, Seperti contonya ada pantai, dengan hotel, serta wisata kuliner yang menggiurkan. #kalogakenakgakusahdimakan
+				<br>Kalau ditanya apasih tujuan kita membuat web "Around the world" ini? Jawabannya gak susah ko tapi gampang. Jawabannya itu karena kita mau kasih saran jitu buat kamu-kamu yang suka traveling nih biar cocok.
+				<br>Nah, kebanyakan masyarakat luar negeri, daerah, rumah, pribumi itu lebih suka ketempat yang ramai, sejuk, segar, dan menyenangkan. Biasanya juga mereka lebih suka pergi bersama keluarga, kerabat, teman #bukanmantan, dan si Doi #nyoman. Siap-siap juga buat kalian yang mau berangkat traveling untuk mempersiapkan diri, mulai dari kendaraan, pakaian, cemilan WAJIB, HandPhone, Uang dan dompet jangan lupa juga untuk banyak istiqfar yaaaa........
+				<br>Kenapa harus wisata Indonesia? sebab Indonesia itu sangat kaya sobat dengan keindahan panorama alamnya baik darat maupun laut. Pantainya juga masih bersih #sebagiansih, tapi dengan begitu kita bisa lebih mengenal kekayaan alam Indonesia, dan menikmati panoramanya (Dari Kita Untuk Kita).
+				<br>Jadi sobat kita harus tetap menjaga kelestarian alam Indonesia ya, kasian nanti anak cucu orang gak bisa main-main lagi hehehe :v Moke selamat Me-nik-ma-ti hari libur kalian dengan main dan travel ye, jangan lupa pantengin terus web ini siapa tau dari tempat yang kita rekomendasiin ada varokah yang bisa kalian dapatkan, Mokeeeeee.....!!!!!</p>
+			</div>
+	</div>
+	<br><br><br>
+	<!-- //information -->
+		
+	<!-- popular -->
+	<div class="popular">
+		<div class="container">
+			<div class="popular-heading information-heading">
+				<h3 class="wow fadeInDown animated" data-wow-delay=".5s">Yang sering dikunjungi</h3>
+				<p class="wow fadeInUp animated" data-wow-delay=".5s">Tempat-tempat yang sering dikunjungi disini lumayan banyak, seperti: kamar mandi, kamr tidur, pantai, warung nasi padang, bakso dan mie ayam</p>
+			</div>
+			<div class="popular-slide">
+				<script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+						// Slideshow 4
+							$("#slider1").responsiveSlides({
+								auto: true,
+								pager: true,
+								nav: false,
+								speed: 500,
+								namespace: "callbacks",
+								before: function () {
+									$('.events').append("<li>before event fired.</li>");
+								},
+								after: function () {
+									$('.events').append("<li>after event fired.</li>");
+								}
+							 });				
+						});
+				</script>
+				<div  id="top" class="callbacks_container-wrap">
+					<ul class="rslides" id="slider1">
+						<li>
+							<div class="popular-slide-info wow bounceIn animated" data-wow-delay=".5s">
+								<h4>Australia</h4>
+								<p>saya kurang tau di Australia ada apa, karena saya belum pernah kesana</p>
+							</div>
+						</li>
+						<li>
+							<div class="popular-slide-info popular-slide1">
+								<h4>Philippines</h4>
+								<p>Di Philippines banyak orang yang gak saya kenal, jika anda mencari jodoh mungkin disinilah tempat yang tepat</p>
+							</div>
+						</li>
+						<li>
+							<div class="popular-slide-info popular-slide2">
+								<h4>Indonesia</h4>
+								<p>Disini banyak sekali artis-artis kurang menarik dan kurang terdidik, hati-hati gagang gitar </p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="popular-grids">
+				<div class="col-md-4 popular-grid wow fadeInLeft animated" data-wow-delay=".5s">
+					<h5></h5>
+					<p></p>
+				</div>
+				<div class="col-md-4 popular-grid wow fadeInUp animated" data-wow-delay=".5s">
+					<h5></h5>
+					<p></p>
+				</div>
+				<div class="col-md-4 popular-grid wow fadeInRight animated" data-wow-delay=".5s">
+					<h5></h5>
+					<p></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //popular -->
+	
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-grids">
+				<div class="col-md-3 footer-nav wow fadeInLeft animated" data-wow-delay=".5s">
+					<h4>Navigation</h4>
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-md-5 footer-nav wow fadeInUp animated" data-wow-delay=".5s">
+					<h4>Berita baru</h4>
+					<p></p>
+					<form>
+						<input type="email" id="mc4wp_email" name="EMAIL" placeholder="Enter your email here" required="">
+						<input type="submit" value="Subscribe">
+					</form>
+				</div>
+				<div class="col-md-4 footer-nav wow fadeInRight animated" data-wow-delay=".5s">
+					<h4>Latest News</h4>
+					<div class="news-grids">
+						<div class="news-grid">
+							<h6>09/01/2016 : <a href="#"></a>Kucing berkaki 4</h6>
+							<h6>13/07/2016 : <a href="#"></a>Unggas mirip angsa</h6>
+							<h6>13/02/2016 : <a href="#"></a>Ikan yang dapat bernafas di air</h6>
+							<h6>28/11/2016 : <a href="#"></a>burung yang bisa terbang</h6>
+							<h6>13/02/2016 : <a href="#"></a>tenggelamnya ikan paus</h6>
+							<h6>28/11/2016 : <a href="#"></a>munculnya buah pisan di pohon pisang</h6>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="copyright wow fadeInUp animated" data-wow-delay=".5s">
+				<p>© 2016 Around . Design by <a href="#">Kucing lari</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->
+</body>	
+</html>
